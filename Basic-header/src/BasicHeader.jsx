@@ -1,9 +1,15 @@
+import PropTypes from 'prop-types'
 
-
-function BasicHeader() {
+function BasicHeader({title}) {
   return (
-    <div>BasicHeader</div>
+    <div>
+      <h1>{title}</h1>
+    </div>
   )
+}
+
+BasicHeader.propTypes = {
+  title : PropTypes.string.isRequired
 }
 
 export default BasicHeader
