@@ -1,16 +1,20 @@
-function ProfileCard({ name, age, location, image, bio, occupation, hobbies }) {
+function ProfileCard({ students }) {
   return (
-    <div className="card">
-      <img src={image} alt="" className="image" />
-      <div className="bio-content">
-        <h1 className="name">{name}</h1>
-        <p className="age">{age}</p>
-        <p className="bio">{bio ? "This is my bio" : ""}</p>
-        <p className="occupation">{occupation}</p>
-        <p className="hobbies">{hobbies}</p>
-        <p className="location">{location}</p>
-      </div>
-    </div>
+    <>
+      {students.map((student, index) => {
+        <div key={index} className="card">
+          <img src={student.image} alt="" className="image" />
+          <div className="bio-content">
+            <h1 className="name">{student.name}</h1>
+            <p className="age">{student.age}</p>
+            <p className="bio">{student.bio ? "This is my bio" : ""}</p>
+            <p className="occupation">{student.occupation}</p>
+            <p className="hobbies">{student.hobbies}</p>
+            <p className="location">{student.location}</p>
+          </div>
+        </div>;
+      })}
+    </>
   );
 }
 
