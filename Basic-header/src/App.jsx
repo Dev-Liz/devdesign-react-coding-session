@@ -1,5 +1,10 @@
+import ProductList from "./ProductList";
+
+
 function App() {
-  return <div>app</div>;
+  return <div>
+    <ProductList />
+  </div>;
 }
 
 export default App;
