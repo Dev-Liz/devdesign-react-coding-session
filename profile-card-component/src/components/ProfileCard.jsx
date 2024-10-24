@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
+
 function ProfileCard({ students }) {
   return (
     <>
-      {students.map((student, index) => {
+      {students.map((student, index) => (
         <div key={index} className="card">
           <img src={student.image} alt="" className="image" />
           <div className="bio-content">
@@ -12,8 +14,8 @@ function ProfileCard({ students }) {
             <p className="hobbies">{student.hobbies}</p>
             <p className="location">{student.location}</p>
           </div>
-        </div>;
-      })}
+        </div>
+      ))}
     </>
   );
 }
