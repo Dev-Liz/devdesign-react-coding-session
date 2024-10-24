@@ -1,10 +1,9 @@
-import BasicHeader from "./BasicHeader";
+import ProductList from "./ProductList";
+
 
 function App() {
   return <div>
-    <BasicHeader title = "Main Title"/>
-    <BasicHeader title = "Speak Up"/>
-    <BasicHeader title = "Now!!"/>
+    <ProductList />
   </div>;
 }
 
