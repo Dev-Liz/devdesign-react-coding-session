@@ -20,7 +20,7 @@ import PropTypes from 'prop-types'
 function ProductCard({productTitle, productDesc, productPrice }){
     return(
         <div>
-            <image / >
+            <img / >
             <h2>{productTitle}</h2>
             <p>{productDesc}</p>
             <h2>${productPrice}</h2>
