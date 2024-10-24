@@ -2,8 +2,36 @@ import ProductList from "./ProductList";
 
 
 function App() {
+  
+
+  const ProductData = [
+    {
+        title : "Gucci Bag",
+        description : "Top leather bag, aliggator skin",
+        price : 13
+    },
+    {
+        title : "Gucci Bag",
+        description : "Top leather bag, aliggator skin",
+        price : 13
+    },
+    {
+        title : "Gucci Bag",
+        description : "Top leather bag, aliggator skin",
+        price : 13
+    },
+    {
+        title : "Gucci Bag",
+        description : "Top leather bag, aliggator skin",
+        price : 13
+    },
+
+  ]
+
   return <div>
-    <ProductList />
+    <ProductList
+      ListofProduct = {ProductData}
+    />
   </div>;
 }
 
