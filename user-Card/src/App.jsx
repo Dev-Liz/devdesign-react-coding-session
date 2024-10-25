@@ -1,7 +1,11 @@
-import Simple from "./Simple.jsx";
+import UserCard from "./components/UserCard.jsx";
 
 function App() {
-  return <Simple />;
+  return (
+    <div className="main-container">
+      <UserCard />
+    </div>
+  );
 }
 
 export default App;

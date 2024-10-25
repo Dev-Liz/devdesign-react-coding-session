@@ -1,6 +1,6 @@
-function NameAndEmailContainer() {
+function UserData() {
   return (
-    <div className="Name-and-email-container">
+    <div className="user-data">
       <h2>John Doe</h2>
       <p>JohnDoe@gmail.com</p>
     </div>

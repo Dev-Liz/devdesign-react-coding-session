@@ -1,23 +1,35 @@
 /* eslint-disable react/prop-types */
 
-function ProfileCard({ students }) {
+function ProfileCard({
+  name,
+  age,
+  bio,
+  occupation,
+  hobby,
+  image,
+  location,
+  index,
+}) {
   return (
-    <>
-      {students.map((student, index) => (
-        <div key={index} className="card">
-          <img src={student.image} alt="" className="image" />
-          <div className="bio-content">
-            <h1 className="name">{student.name}</h1>
-            <p className="age">{student.age}</p>
-            <p className="bio">{student.bio ? "This is my bio" : ""}</p>
-            <p className="occupation">{student.occupation}</p>
-            <p className="hobbies">{student.hobbies}</p>
-            <p className="location">{student.location}</p>
-          </div>
-        </div>
-      ))}
-    </>
+    <div className="card" key={index}>
+      <img src={image} alt="" className="image" />
+      <div className="bio-content">
+        <h1 className="name">{name}</h1>
+        <p className="bio">{bio}</p>
+        <p className="age">
+          <span className="label">Age:</span> {age}
+        </p>
+        <p className="occupation">
+          <span className="label">Occupation:</span> {occupation}
+        </p>
+        <p className="hobby">
+          <span className="label">Hobby:</span> {hobby}
+        </p>
+        <p className="location">
+          <span className="label">Location:</span> {location}
+        </p>
+      </div>
+    </div>
   );
 }
-
 export default ProfileCard;
