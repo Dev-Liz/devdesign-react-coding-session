@@ -1,27 +1,32 @@
 import styles from "./AlertDialog.module.css";
+import buttonStyles from "./Button.module.css";
 import PropTypes from "prop-types";
+import Button from "./Buttons.jsx";
 
-function AlertDialog({ handleClick }) {
+function AlertDialog({ handleClick, title, message }) {
   return (
     <>
       <div className={styles.overlay}>
         <div className={styles.cardWrapper}>
           <div className={styles.titleAndMessage}>
             <div className={styles.title}>
-              <h1>Are you absolutely sure?</h1>
+              <h1>{title}</h1>
             </div>
             <div className={styles.message}>
-              <p>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
-              </p>
+              <p>{message}</p>
             </div>
           </div>
-          <div className={styles.buttonContainer}>
-            <button className={styles.cancelButton} onClick={handleClick}>
-              Cancel
-            </button>
-            <button className={styles.continueButton}>Continue</button>
+          <div className={buttonStyles.buttonContainer}>
+            <Button
+              buttonText="Cancel"
+              className={buttonStyles.cancelButton}
+              onClick={handleClick}
+            />
+            <Button
+              buttonText="Continue"
+              className={buttonStyles.continueButton}
+              onClick={handleClick}
+            />
           </div>
         </div>
       </div>
@@ -33,4 +38,6 @@ export default AlertDialog;
 
 AlertDialog.propTypes = {
   handleClick: PropTypes.func,
+  title: PropTypes.string,
+  message: PropTypes.string,
 };
