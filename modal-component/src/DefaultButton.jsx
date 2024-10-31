@@ -15,13 +15,8 @@ function DefaultButton() {
 
   const [isDialog, setIsDialog] = useState(false);
 
-  const openDialog = () => {
-    setIsDialog(true);
-  };
-
-  const closeDialog = () => {
-    setIsDialog(false);
-  };
+  const openDialog = () => setIsDialog(true);
+  const closeDialog = () => setIsDialog(false);
 
   return (
     <>
