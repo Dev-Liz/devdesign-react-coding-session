@@ -1,0 +1,31 @@
+.buttonContainer {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.cancelButton {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  outline: transparent;
+  border: transparent;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(226, 232, 240, 1);
+  cursor: pointer;
+}
+
+.continueButton,
+.defaultButton {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(15, 23, 42, 1);
+  color: rgba(255, 255, 255, 1);
+  outline: transparent;
+  border: transparent;
+  cursor: pointer;
+}
