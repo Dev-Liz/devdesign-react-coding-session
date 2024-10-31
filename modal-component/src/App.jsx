@@ -1,10 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import AlertDialog from "./AlertDialog.jsx";
+import "./App.css";
+import DefaultButton from "./DefaultButton.jsx";
 
 function App() {
-  return <></>
+  return (
+    <>
+      <DefaultButton />
+      {/* <AlertDialog /> */}
+    </>
+  );
 }
 
-export default App
+export default App;
