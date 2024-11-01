@@ -1,5 +1,5 @@
 # devdesign-react-coding-session
-## *Note: This repository has been updated with a new task project named "modal-component". Please scroll to Project 4 to learn more.*
+## *Note: This repository has been updated with a new task project named "modal-component". Please scroll to [Project 4](https://github.com/Dev-Liz/devdesign-react-coding-session/blob/main/README.md#project-4---modal-component) to learn more.*
 
 <br>
 This is a Repository of the Dev-Design React Student coding session. A collective effort of students from both teams.
