@@ -63,8 +63,8 @@ This project contains an interactive default button component that displays a wa
 
 To implement this project, we utilized all that we learnt in **Week 5** classes of the BootCamp.
 - We styled components using the modular and in-line styling methods
-- We Utilized the **useState** hook to manage the display of the modal (set to boolean by default)
-- We Conditionally rendered the modal using the ternary operators.
+- We utilized the **useState** hook to manage the display of the modal (set to boolean by default)
+- We conditionally rendered the modal using ternary operators.
 - We passed important functionalities to child components (cancel and continue buttons) using props.
 
 
