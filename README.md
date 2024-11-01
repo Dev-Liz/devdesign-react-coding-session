@@ -1,10 +1,13 @@
 # devdesign-react-coding-session
 ## *Note: This repository has been updated with a new task project named "modal-component". Please scroll to Project 4 to learn more.*
 
-
+<br>
 This is a Repository of the Dev-Design React Student coding session. A collective effort of students from both teams.
 
 The Repository contains all tasks from the session, categorized into independent Projects.
+
+
+<br>
 
 ## Project 1 - User-Card
 This project (task 1, section 1 of the task file), displays a basic Header component that accepts a title props.
