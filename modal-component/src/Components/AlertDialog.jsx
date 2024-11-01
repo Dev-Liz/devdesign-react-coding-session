@@ -1,5 +1,5 @@
-import styles from "./AlertDialog.module.css";
-import buttonStyles from "./Button.module.css";
+import styles from "../CSS/AlertDialog.module.css";
+import buttonStyles from "../CSS/Button.module.css";
 import PropTypes from "prop-types";
 import Button from "./Buttons.jsx";
 

@@ -1,5 +1,4 @@
-import "./App.css";
-import DefaultButton from "./DefaultButton.jsx";
+import DefaultButton from "./Components/DefaultButton.jsx";
 
 function App() {
   return (
